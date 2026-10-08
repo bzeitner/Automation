@@ -1,0 +1,26 @@
+.DS_Store
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Source material and generated artifacts may contain confidential information.
+AB/
+AB.zip
+__MACOSX/
+render_ab/
+*.mp4
+*.MP4
+output/
+*.xlsx
+*.sqlite
+*.sqlite3
+*.db
+*.ocr.pdf
+:memory:.ses

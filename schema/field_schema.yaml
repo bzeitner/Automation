@@ -1,0 +1,526 @@
+schema_version: 1
+description: >-
+  Canonical extraction schema derived from field_list. Common fields apply to
+  every recognized document type; type-specific fields extend that set.
+
+required_naming_fields:
+  - document_date
+  - case_number
+  - primary_party
+  - document_type
+
+common_fields:
+  court_name: Court name
+  court_county: Court county or jurisdiction
+  case_number: Case or cause number
+  case_title: Case title or caption
+  plaintiff_names: Plaintiff or petitioner names
+  defendant_names: Defendant or respondent names
+  document_title: Document title as printed
+  document_date: Best substantive document date
+  filing_date: Filing date
+  filing_time: Filing time
+  filing_status: Filing status or stamp
+  clerk_name: Clerk name
+  attorney_names: Attorney names
+  law_firm: Law firm or organization
+  attorney_bar_numbers: Attorney bar membership numbers
+  attorney_address: Attorney mailing address
+  attorney_phone: Attorney telephone
+  attorney_fax: Attorney fax
+  attorney_email: Attorney email
+  signatures: Signers and signatures
+  page_number: Printed page number
+  filing_identifier: Document code, barcode, or filing identifier
+
+document_types:
+  case_information_cover_sheet:
+    label: Case Information Cover Sheet
+    filename_label: Case-Information-Cover-Sheet
+    aliases:
+      - Case Information Cover Sheet
+      - CICS
+    fields:
+      case_type: Civil or other case type
+      cause_of_action_category: Selected cause-of-action category or code
+      cause_of_action_description: Other cause-of-action description
+
+  summons:
+    label: Summons
+    filename_label: Summons
+    aliases:
+      - SUMMONS
+    fields:
+      response_deadline_date: Written-response deadline date
+      response_deadline_time: Written-response deadline time
+      addressee_name: Addressee or tenant name
+      service_address: Service address
+      court_date: Court date
+      response_instructions: Instructions for responding
+      filing_address: Court or clerk filing address
+      court_business_hours: Court business hours
+      permitted_delivery_methods: Permitted response-delivery methods
+      legal_aid_contacts: Legal-aid contacts, telephone numbers, and websites
+
+  complaint_unlawful_detainer:
+    label: Complaint for Unlawful Detainer
+    filename_label: Complaint-for-Unlawful-Detainer
+    aliases:
+      - COMPLAINT FOR UNLAWFUL DETAINER
+    fields:
+      landlord_name: Landlord or property owner
+      tenant_name: Tenant name
+      property_address: Rental-property address and unit
+      lease_date: Lease date
+      lease_terms_at_issue: Lease terms or rules at issue
+      accommodation_facts: Disability or reasonable-accommodation facts
+      accommodation_schedule: Accommodation schedule
+      warning_dates: Warning-letter dates
+      incident_dates: Incident or surveillance dates
+      notice_type: Notice type
+      notice_date: Notice date
+      notice_service_methods: Notice service methods
+      compliance_deadline: Compliance or vacate deadline
+      continued_possession_status: Continued-possession status
+      statutory_authority: Statutory cause or authority
+      requested_relief: Requested relief
+
+  motion_order_show_cause:
+    label: Motion for Order to Show Cause
+    filename_label: Motion-for-Order-to-Show-Cause
+    aliases:
+      - MOTION FOR ORDER TO SHOW CAUSE
+    fields:
+      statutory_authority: Statutory authority
+      requested_hearing_relief: Requested hearing or show-cause relief
+      property_address: Property address
+      lease_date: Lease date
+      accommodation_facts: Disability or accommodation facts
+      accommodation_schedule: Accommodation terms and schedule
+      warning_dates: Warning-letter dates
+      incident_dates: Incident or surveillance dates
+      notice_date: Notice-to-comply-or-vacate date
+      notice_service_methods: Notice service methods
+      compliance_period: Compliance period
+      continued_possession_status: Continued possession or noncompliance
+      requested_relief: Requested order and writ relief
+
+  fact_declaration:
+    label: Declaration
+    filename_label: Declaration
+    aliases:
+      - DECLARATION OF
+      - DECLARATION
+    fields:
+      declarant_name: Declarant name
+      declarant_role: Declarant title or relationship to a party
+      declarant_qualifications: Age, citizenship, competency, or knowledge statement
+      property_address: Property address and unit
+      tenant_name: Tenant name
+      lease_date: Lease date
+      factual_chronology: Relevant facts or chronology
+      accommodation_facts: Disability or accommodation facts
+      warning_dates: Warning or notice dates
+      incident_dates: Alleged incident dates
+      mailing_dates: Mailing dates
+      service_dates: Service or posting dates
+      recipient_name: Recipient name
+      recipient_address: Recipient address
+      documents_served: Documents mailed or served
+      exhibit_references: Exhibit references
+      perjury_declaration: Declaration under penalty of perjury
+      signed_date: Signed date
+      signed_location: Signed location
+
+  order_show_cause:
+    label: Order to Show Cause
+    filename_label: Order-to-Show-Cause
+    aliases:
+      - ORDER TO SHOW CAUSE
+    fields:
+      hearing_date: Hearing date
+      hearing_time: Hearing time
+      courtroom: Courtroom number
+      courthouse_address: Courthouse address
+      property_address: Property subject to restitution
+      statutory_authority: Statutory authority
+      required_appearance: Required appearance or response
+      virtual_hearing_platform: Virtual-hearing platform
+      virtual_hearing_id: Meeting or courtroom ID
+      virtual_hearing_link: Virtual-hearing link
+      virtual_hearing_passcode: Virtual-hearing passcode
+      judicial_officer: Judicial-officer name and title
+
+  declaration_mailing:
+    label: Declaration of Mailing
+    filename_label: Declaration-of-Mailing
+    aliases:
+      - DECLARATION OF MAILING
+    fields:
+      declarant_name: Declarant name
+      declarant_qualifications: Declarant qualifications
+      mailing_date: Mailing date
+      mailing_location: Mailing or signing location
+      recipient_name: Recipient name
+      recipient_role: Recipient role or counsel status
+      recipient_firm: Recipient firm
+      recipient_address: Recipient mailing address
+      mailing_methods: Mailing methods
+      enclosed_documents: Enclosed documents
+      exhibit_references: Mailing, posting, or service exhibits
+      perjury_declaration: Declaration under penalty of perjury
+
+  answer:
+    label: Answer
+    filename_label: Answer
+    aliases:
+      - ANSWER
+    fields:
+      answering_party: Defendant or respondent filing the answer
+
+  notice_appearance:
+    label: Notice of Appearance
+    filename_label: Notice-of-Appearance
+    aliases:
+      - Notice of Appearance
+      - NOTICE OF APPEARANCE
+    fields:
+      recipient_clerk: Clerk recipient
+      opposing_counsel: Opposing attorney or firm
+      appearing_party: Appearing party
+      appearing_attorney: Appearing attorney
+      service_request: Request that future papers be served on counsel
+
+  notice_intent_withdraw:
+    label: Notice of Intent to Withdraw
+    filename_label: Notice-of-Intent-to-Withdraw
+    aliases:
+      - Notice of Intent to Withdraw
+      - NOTICE OF INTENT TO WITHDRAW
+    fields:
+      recipient_clerk: Clerk recipient
+      opposing_counsel: Opposing counsel
+      client_recipient: Client or party recipient
+      withdrawing_attorney: Withdrawing attorney
+      withdrawing_organization: Withdrawing attorney organization
+      effective_date: Withdrawal effective date
+      objection_deadline: Objection deadline or condition
+      hearing_type: Scheduled hearing type
+      hearing_date: Hearing date
+      hearing_time: Hearing time
+      client_last_known_address: Client last-known address
+
+  certificate_service:
+    label: Certificate of Service
+    filename_label: Certificate-of-Service
+    aliases:
+      - CERTIFICATE OF SERVICE
+    fields:
+      service_date: Service date
+      documents_served: Documents served
+      recipient_name: Recipient name
+      recipient_role: Recipient role or counsel status
+      recipient_address: Recipient address
+      recipient_fax: Recipient fax number
+      service_methods: Service methods
+      certification_text: Certification or perjury statement
+      signed_date: Signed date
+      signed_location: Signed location
+      signer_name: Signer name
+      signer_role: Signer role
+
+  motion_hearing_minute_sheet:
+    label: Motion Hearing Minute Sheet
+    filename_label: Motion-Hearing-Minute-Sheet
+    aliases:
+      - MOTION HEARING
+      - THE MATTER BEFORE THE COURT
+      - Motion Hearing
+    fields:
+      judicial_officer: Judicial officer or commissioner
+      court_reporter: Court reporter or recording method
+      courtroom: Courtroom
+      court_clerk: Court clerk
+      hearing_date: Hearing date
+      plaintiff_appearance: Plaintiff appearance and method
+      plaintiff_counsel: Plaintiff counsel
+      defendant_appearance: Defendant appearance and method
+      defendant_counsel: Defendant counsel
+      guardian_ad_litem_appearance: Guardian ad litem appearance
+      matter_type: Hearing or matter type
+      testimony_taken: Testimony-taken indicator
+      hearing_notes: Narrative testimony or hearing notes
+      outcome: Hearing outcome
+      writ_granted: Writ-granted indicator
+      continued_hearing_date: Continued hearing date
+      continued_hearing_time: Continued hearing time
+      hearing_duration: Hearing duration or time
+
+  order_granting_writ_restitution:
+    label: Order Granting Writ of Restitution
+    filename_label: Order-Granting-Writ-of-Restitution
+    aliases:
+      - ORDER GRANTING WRIT OF RESTITUTION
+    fields:
+      proposed_status: Proposed or final status
+      basis_considered: Basis and record considered
+      findings_of_fact: Findings of fact
+      property_address: Premises address
+      active_duty_status: Active-duty military status
+      lease_termination_date: Lease-termination effective date
+      writ_terms: Writ issuance and bond terms
+      receiving_agency: Sheriff or agency receiving writ
+      initial_return_period: Initial return period
+      extension_period: Extension period
+      break_and_enter_authority: Sheriff break-and-enter authority
+      judicial_officer: Judicial-officer name and title
+
+  hud_model_lease:
+    label: HUD Model Lease
+    filename_label: HUD-Model-Lease
+    aliases:
+      - Model Lease
+      - DEPARTMENT OF HOUSING AND URBAN DEVELOPMENT
+    fields:
+      omb_number: OMB approval number
+      hud_project_name: Project name
+      hud_project_number: HUD project number
+      agreement_date: Agreement date
+      landlord_name: Landlord name
+      tenant_names: Tenant names
+      dwelling_address: Dwelling or unit address
+      lease_start_date: Lease start date
+      lease_end_date: Lease end date
+      contract_rent: Contract rent
+      included_utilities: Included utilities
+      tenant_paid_utilities: Tenant-paid utilities
+      utility_allowance: Utility allowance
+      housing_assistance_payment: Housing-assistance payment
+      tenant_rent_share: Tenant rent share
+      security_deposit: Security deposit
+      household_income: Household income
+      household_composition: Household composition
+      landlord_signature_date: Landlord signature date
+      tenant_signature_dates: Tenant signature dates
+      hud_form_number: HUD form number and revision
+
+  house_rules_grievance:
+    label: House Rules and Grievance Procedure
+    filename_label: House-Rules-and-Grievance-Procedure
+    aliases:
+      - GRIEVANCE PROCEDURE
+      - HOUSE RULES
+    fields:
+      property_management: Property or management identity
+      management_address: Management address
+      resident_association: Resident association
+      grievance_committee: Grievance committee
+      regional_manager: Regional manager
+      grievance_procedure: Written-grievance procedure
+      management_response_period: Management-response period
+      rules: House-rule topics and requirements
+      acknowledgement_signers: Tenant, co-tenant, and witnesses
+      acknowledgement_dates: Acknowledgement dates
+
+  hud_vawa_notice:
+    label: HUD VAWA Notice of Occupancy Rights
+    filename_label: HUD-VAWA-Notice
+    aliases:
+      - NOTICE OF OCCUPANCY RIGHTS UNDER THE VIOLENCE AGAINST WOMEN ACT
+    fields:
+      hud_form_number: HUD form number
+      omb_number: OMB approval number
+      expiration_date: Form expiration date
+      covered_housing_program: Covered housing program
+      protected_person_definitions: Protected-person definitions
+      emergency_transfer_conditions: Emergency-transfer conditions
+      lease_bifurcation_information: Lease-bifurcation information
+      acceptable_documentation: Acceptable documentation
+      confidentiality_requirements: Confidentiality requirements
+      help_contacts: Complaint or help contacts
+
+  hud_vawa_certification:
+    label: HUD VAWA Certification
+    filename_label: HUD-VAWA-Certification
+    aliases:
+      - CERTIFICATION OF DOMESTIC VIOLENCE
+      - DATING VIOLENCE, SEXUAL ASSAULT, OR STALKING
+    fields:
+      victim_names: Victim names
+      applicant_tenant_name: Applicant or tenant name
+      household_members: Other household members
+      perpetrator_name: Perpetrator name
+      safe_contact_method: Safe-contact method
+      phone_number: Telephone number
+      safe_voicemail: Safe-to-leave-voicemail choice
+      email_address: Email address
+      safe_email: Safe-to-email choice
+      mailing_address: Mailing address
+      safe_mail: Safe-to-mail choice
+      incident_information: Incident or certification information
+      certification_signature: Certification signature
+      certification_date: Certification date
+
+  notice_comply_vacate:
+    label: Notice to Comply or Vacate
+    filename_label: Notice-to-Comply-or-Vacate
+    aliases:
+      - NOTICE TO COMPLY OR VACATE
+      - Notice to Comply or Vacate the Premises
+    fields:
+      notice_date: Notice date
+      delivery_methods: Delivery methods
+      recipient_name: Recipient name
+      recipient_address: Recipient address
+      landlord_name: Landlord or property name
+      property_address: Property address
+      alleged_violation: Alleged violation
+      lease_rule_provision: Lease or rule provision implicated
+      prior_warnings: Prior warnings
+      accommodation_facts: Accommodation requested or provided
+      corrective_action: Required corrective action
+      compliance_deadline: Compliance or vacate deadline
+      consequences: Consequences of noncompliance
+      legal_resource_contacts: Legal-resource contacts
+
+  attorney_warning_letter:
+    label: Attorney Warning or Demand Letter
+    filename_label: Attorney-Warning-Letter
+    aliases:
+      - DEMAND TO
+      - Failure to Comply Could Lead to Termination of Lease
+    fields:
+      letter_date: Letter date
+      delivery_method: Delivery method
+      sender_attorneys: Sender attorneys
+      recipient_name: Recipient name
+      recipient_address: Recipient address
+      subject: Subject or reference line
+      property_address: Property address
+      prior_communications: Prior communications or notices
+      incident_dates_times: Incident dates and times
+      accommodation_facts: Accommodation facts
+      demand: Required action or demand
+      consequences: Consequences of noncompliance
+      proposed_meeting: Proposed meeting dates and times
+      interpreter_request: Interpreter request or need
+      scheduling_contact: Scheduling contact
+
+  email_correspondence:
+    label: Email Correspondence
+    filename_label: Email-Correspondence
+    aliases:
+      - "From:"
+      - "Sent:"
+      - "Subject:"
+    fields:
+      from: Sender
+      sent_at: Sent date and time
+      to: Recipients
+      cc: Carbon-copy recipients
+      subject: Subject
+      message_body: Message body
+      sender_contact: Sender signature or contact information
+
+  photographic_evidence:
+    label: Photographic Evidence
+    filename_label: Photographic-Evidence
+    aliases:
+      - PHOTO
+      - PHOTOGRAPH
+    fields:
+      exhibit_designation: Exhibit designation
+      subject_shown: Subject shown
+      location: Location
+      captured_at: Date and time
+      caption: Caption or description
+      visible_identifiers: Visible labels, addresses, barcodes, or identifiers
+
+  certified_mail_receipt:
+    label: Certified Mail Receipt
+    filename_label: Certified-Mail-Receipt
+    aliases:
+      - U.S. Postal Service Certified Mail Receipt
+      - USPS ARTICLE NUMBER
+    fields:
+      tracking_number: USPS article or tracking number
+      certified_mail_fee: Certified-mail fee
+      return_receipt_type: Return-receipt type
+      restricted_delivery: Restricted-delivery option
+      postage: Postage
+      total_fees: Total postage and fees
+      postmark_date: Postmark date
+      sender_reference: Sender or reference information
+      recipient_name: Recipient name
+      recipient_address: Recipient address
+      delivery_signature: Delivery signature
+      agent_or_addressee: Agent or addressee choice
+      delivered_to_name: Printed recipient name
+      delivery_date: Delivery date
+      service_type: Service type
+
+  mailing_label:
+    label: Mailing Label or Slip
+    filename_label: Mailing-Label
+    aliases:
+      - TRACKING
+      - MAILING
+    fields:
+      sender: Sender
+      recipient: Recipient
+      mailing_address: Mailing address
+      mailing_date: Mailing date
+      postal_service_class: Postal service or class
+      tracking_number: Tracking or article number
+      package_information: Package information
+      reference_number: Reference number
+      barcode: Barcode
+
+  declaration_service_posting:
+    label: Declaration of Service or Posting
+    filename_label: Declaration-of-Service-or-Posting
+    aliases:
+      - DECLARATION OF SERVICE
+      - DECLARATION OF POSTING
+      - POSTING
+    fields:
+      matter_name: Case or matter name
+      property_address: Property address
+      venue: State, county, or notary venue
+      process_server_name: Process-server name
+      process_server_qualifications: Process-server qualifications
+      service_date: Service date
+      service_time: Service time
+      service_address: Service address
+      documents_served: Documents served
+      service_method: Service method
+      posting_location: Posting location
+      attempted_service: Attempted-service dates, times, contacts, and results
+      perjury_declaration: Declaration under penalty of perjury
+      process_server_company: Process-server company
+      process_server_contact: Company address and telephone
+      process_server_id: Process-server identification number
+
+  scra_status_report:
+    label: Department of Defense SCRA Status Report
+    filename_label: SCRA-Status-Report
+    aliases:
+      - Status Report Pursuant to Servicemembers Civil Relief Act
+      - Department of Defense Manpower Data Center
+    fields:
+      ssn_identifier: SSN or identifying-number field
+      birth_date: Birth date
+      last_name: Last name
+      first_name: First name
+      middle_name: Middle name
+      status_as_of: Status-as-of date
+      certificate_id: Certificate ID
+      active_duty_start_date: Active-duty start date
+      active_duty_end_date: Active-duty end date
+      active_duty_status: Active-duty status
+      service_component: Service component
+      active_within_367_days: Active duty within the prior 367 days
+      future_callup_status: Future call-up notification status
+      order_notification_start: Order-notification start date
+      order_notification_end: Order-notification end date
+      result_explanation: Search-result explanation

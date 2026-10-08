@@ -1,0 +1,684 @@
+# PDF Document Types and Field List
+
+Source folder: `AB/`
+
+This is a schema-oriented inventory of the document types and information fields visible in the 14 PDFs. Repeated labels have been normalized for readability. Narrative pleadings are described by the factual fields they contain, even when those facts appear as prose rather than blank form boxes.
+
+## Source-file index
+
+- `document.pdf` — Case Information Cover Sheet (CICS)
+- `document-2.pdf` — Summons
+- `document-3.pdf` — Complaint for Unlawful Detainer
+- `document-4.pdf` — Motion for Order to Show Cause
+- `document-5.pdf` — Declaration of J'Vonne Hendricks, with Exhibits A–E
+- `document-6.pdf` — Declaration of Jordan McFeely, with Exhibits A–E
+- `document-7.pdf` — Order to Show Cause
+- `document-8.pdf` — Declaration of Mailing, with service/mailing exhibits
+- `document-9.pdf` — Answer, Notice of Appearance, and Certificate of Service
+- `document-10.pdf` — Motion Hearing / Show Cause Minute Sheet
+- `document-11.pdf` — Notice of Intent to Withdraw and Certificate of Service
+- `document-12.pdf` — Declaration of Mailing
+- `document-13.pdf` — Motion Hearing / Show Cause Minute Sheet
+- `document-14.pdf` — Order Granting Writ of Restitution
+
+## Fields common to court filings
+
+- Court name
+- Court county/jurisdiction
+- Case number
+- Case title or caption
+- Plaintiff/petitioner name
+- Plaintiff entity type or descriptor
+- Defendant/respondent name
+- Defendant descriptor
+- Document title
+- Filing status or stamp
+- Filing date and time
+- Clerk name
+- County
+- Page number
+- Document code, barcode, or filing identifier
+- Draft/proposed status
+- Clerk action required indicator
+
+## Case Information Cover Sheet (CICS)
+
+Source: `document.pdf`
+
+- Case type: civil
+- Court
+- Case number
+- Case title
+- Attorney name
+- Bar membership number
+- Cause-of-action category/code selection
+- Other or unclassified cause-of-action description
+- Filing date and time
+- Clerk name
+- County
+
+The form includes a large category checklist. The selected category in this set is Unlawful Detainer — Residential. Other available categories cover judgments, administrative review, consumer claims, protection orders, employment, foreclosure, personal injury, property damage, tax warrants, torts, writs, and related civil matters.
+
+## Summons
+
+Source: `document-2.pdf`
+
+- Court and case-caption fields
+- Written-response deadline date
+- Written-response deadline time
+- Addressee/tenant name
+- Addressee/tenant service address
+- Statement that the action seeks eviction
+- Case-filed status
+- Court-date information
+- Instructions for responding
+- Required notice-of-appearance contents:
+  - Statement of appearance
+  - Landlord/plaintiff names
+  - Tenant/defendant names
+  - Responding party name
+  - Mailing address for legal documents
+  - Signature
+  - Telephone number
+  - Case number
+- Court/clerk filing address
+- Court business hours
+- Permitted delivery methods
+- Landlord or landlord-attorney delivery address
+- Attorney name
+- Law firm
+- Attorney mailing address
+- Telephone
+- Fax
+- Email
+- Eviction legal-aid contact information
+- Legal-aid telephone numbers and website
+- Document date
+- Attorney signature
+- Bar number
+- Attorney role
+
+## Complaint for Unlawful Detainer
+
+Source: `document-3.pdf`
+
+- Court and case-caption fields
+- Parties and jurisdiction
+- Landlord/plaintiff identity and entity type
+- Tenant/defendant identity and residence
+- Property owner/operator
+- Rental-property address and unit
+- Lease date
+- Lease terms or rules at issue
+- Tenant disability or accommodation facts
+- Reasonable accommodation offered
+- Accommodation schedule
+- Accommodation confirmation date and communication method
+- Alleged violation or noncompliance
+- Warning-letter dates
+- Incident or surveillance dates
+- Notice type
+- Notice date
+- Notice service methods
+- Compliance or vacate deadline
+- Post-notice incident dates
+- Continued-possession status
+- Statutory cause of action
+- Requested relief
+- Writ-of-restitution request
+- Possession-restoration request
+- Other requested relief
+- Pleading date
+- Attorney/law-firm signature fields
+
+## Motion for Order to Show Cause
+
+Source: `document-4.pdf`
+
+- Court and case-caption fields
+- Introduction
+- Factual basis
+- Legal argument
+- Conclusion/requested order
+- Statutory authority
+- Requested hearing/show-cause relief
+- Property address
+- Landlord/property ownership
+- Lease date
+- Tenant disability or accommodation facts
+- Reasonable-accommodation terms and schedule
+- Accommodation confirmation date
+- Warning-letter dates
+- Incident/surveillance dates
+- Notice-to-comply-or-vacate date
+- Notice service methods
+- Compliance period
+- Later incident dates
+- Continued possession/noncompliance
+- Request that tenant appear and show cause
+- Request for writ of restitution
+- Motion date
+- Attorney/law-firm signature fields
+
+## Fact Declaration
+
+Sources: main declaration in `document-5.pdf`; main declaration in `document-6.pdf`
+
+- Court and case-caption fields
+- Declarant name
+- Declarant job title or relationship to a party
+- Age/citizenship/competency statement
+- Personal-knowledge statement
+- Property owner/operator
+- Property address and unit
+- Tenant name and address
+- Lease date
+- Relevant facts or chronology
+- Tenant disability/accommodation information
+- Accommodation terms and schedule
+- Warning or notice dates
+- Alleged incident dates
+- Mailing, service, or posting dates
+- Recipient name and address
+- Documents mailed or served
+- Exhibit references
+- Declaration under penalty of perjury
+- Signed date
+- Signed location
+- Declarant signature
+
+## Order to Show Cause
+
+Source: `document-7.pdf`
+
+- Court and case-caption fields
+- Hearing date
+- Hearing time
+- Courtroom number
+- Courthouse address
+- Property address subject to restitution
+- Statutory authority
+- Required appearance or response
+- Virtual-hearing platform
+- Virtual courtroom/meeting ID
+- Virtual-hearing link
+- Passcode
+- Order date
+- Judicial-officer name
+- Judicial-officer title
+- Judicial signature
+- Presenting party/law firm
+- Presenting attorney name
+- Bar number
+- Attorney address
+- Telephone
+- Email
+- Attorney role
+
+## Declaration of Mailing
+
+Sources: `document-8.pdf`, `document-12.pdf`, and an exhibit within `document-6.pdf`
+
+- Court and case-caption fields
+- Declarant name
+- Declarant qualifications
+- Mailing date
+- Mailing location
+- Recipient name
+- Recipient role or counsel status
+- Recipient firm
+- Recipient mailing address
+- Mailing method
+- First-class-mail indicator
+- Certified-mail indicator
+- Return-receipt indicator
+- List of enclosed documents
+- Related mailing-slip exhibits
+- Related posting/service exhibits
+- Declaration under penalty of perjury
+- Signature
+- Signer role
+- Signed date
+- Signed location
+
+## Answer
+
+Source: `document-9.pdf`
+
+- Court and case-caption fields
+- Document title
+- Defendant/respondent identity
+- Filing date and time
+- Clerk and county
+- Attorney/organization name
+- Attorney/organization address
+- Telephone
+- Fax
+
+## Notice of Appearance
+
+Source: `document-9.pdf`
+
+- Court and case-caption fields
+- Recipient: clerk of court
+- Recipient: opposing attorney or firm
+- Opposing attorney name
+- Opposing firm
+- Opposing attorney address
+- Telephone
+- Fax
+- Email
+- Appearing party
+- Appearing attorney
+- Request that future papers be served on counsel
+- Date
+- Attorney signature
+- Attorney name
+- Bar number
+- Attorney email
+- Attorney role
+
+## Notice of Intent to Withdraw
+
+Source: `document-11.pdf`
+
+- Court and case-caption fields
+- Recipient: clerk of court
+- Recipient: opposing counsel
+- Opposing counsel name
+- Firm
+- Address
+- Telephone
+- Fax
+- Email
+- Client/party recipient
+- Withdrawing attorney name
+- Withdrawing attorney organization
+- Withdrawal effective date
+- Objection deadline or condition
+- Scheduled hearing type
+- Hearing date and time
+- Client's last-known address
+- Attorney signature
+- Attorney bar number
+- Attorney role
+
+## Certificate of Service
+
+Sources: `document-9.pdf`, `document-11.pdf`
+
+- Court and case-caption fields
+- Service date
+- Documents served
+- Recipient name
+- Recipient role or counsel status
+- Recipient address
+- Recipient fax number
+- Service method
+- Certified-mail indicator
+- First-class-mail indicator
+- Fax-transmission indicator
+- Certification under penalty of perjury
+- Signed date
+- Signed location
+- Signature
+- Signer name
+- Signer title/role
+- Organization
+- Organization address and telephone
+
+## Motion Hearing / Show Cause Minute Sheet
+
+Sources: `document-10.pdf`, `document-13.pdf`
+
+- Court and county
+- Plaintiff name
+- Defendant name
+- Judicial officer/commissioner
+- Court reporter or recording method
+- Courtroom
+- Court clerk
+- Hearing date
+- Case number
+- Plaintiff/petitioner appearance
+- Plaintiff appearance method
+- Plaintiff counsel
+- Defendant/respondent appearance
+- Defendant appearance method
+- Defendant counsel
+- Guardian ad litem appearance
+- Other/state appearance
+- Hearing or matter type
+- Show-cause subject
+- Motion-for-default/to-compel checkbox
+- Unlawful-detainer checkbox
+- Minor-settlement checkbox
+- Summary-judgment checkbox
+- Supplemental-exam checkbox
+- Entry-of-order checkbox
+- Status/review checkbox
+- Settlement-on-record checkbox
+- Testimony-taken checkbox
+- Narrative testimony/hearing-notes area
+- Courtroom polled
+- Default granted
+- Motion granted/denied
+- Order signed as presented
+- Matter stricken/continued
+- New hearing date and time
+- No-response indicator
+- Writ granted
+- Matter taken under advisement
+- Order to be presented
+- Court scheduler advised
+- Judgment approved
+- Hearing duration/time
+- Pleadings/file taken from hearing
+- Page number
+- Matter/document code and barcode
+
+## Order Granting Writ of Restitution
+
+Source: `document-14.pdf`
+
+- Court and case-caption fields
+- Proposed/final status
+- Clerk's-action-required indicator
+- Basis for considering the matter
+- Pleadings and papers reviewed
+- Findings of fact:
+  - Landlord identity
+  - Tenant identity
+  - Property address
+  - Landlord-tenant relationship
+  - Lease information
+  - Disability/accommodation facts
+  - Accommodation terms and schedule
+  - Alleged noncompliance
+  - Warning-letter dates
+  - Incident dates
+  - Notice date and service methods
+  - Court-document service date and methods
+  - Continued-possession status
+  - Active-duty military status
+- Lease-termination effective date
+- Writ issue requirement
+- Bond requirement or waiver
+- Premises restored to landlord
+- Sheriff/agency receiving writ
+- Initial return period
+- Extension period
+- Sheriff break-and-enter authority
+- Order date
+- Judicial signature
+- Judicial-officer name and title
+- Presenting law firm
+- Presenting attorney
+- Bar number
+- Attorney contact information
+- Attorney role
+
+## Embedded lease and housing documents
+
+### HUD Model Lease
+
+Source: Exhibit A in `document-5.pdf`
+
+- Department/agency name
+- OMB approval number
+- Project name
+- HUD project number
+- Model-lease program/type
+- Agreement date
+- Landlord name
+- Tenant name
+- Dwelling/unit address
+- Lease start date
+- Lease end date
+- Contract rent
+- Included utilities
+- Tenant-paid utilities
+- Utility allowance
+- Meal-service charge
+- Housing-assistance payment
+- Tenant rent share
+- Payment recipient/location
+- Security deposit
+- Renewal terms
+- Tenant termination notice
+- Landlord termination grounds
+- Material-noncompliance criteria
+- Criminal/drug/abuse-related grounds
+- Household income
+- Household composition
+- Eligibility and recertification requirements
+- Monthly-rent adjustment
+- Occupancy/use restrictions
+- Income-reporting duties
+- Maintenance duties
+- Landlord access/inspection terms
+- Pet rules
+- Repairs/alterations/modifications
+- Household-change reporting
+- Income increase/decrease reporting
+- Subsidy termination/removal conditions
+- Landlord name/signature/date
+- Tenant signature/date
+- Witness signature/date
+- Required attachments
+- HUD form number and revision
+
+### House Rules and Grievance Procedure
+
+Source: Exhibit A in `document-5.pdf`
+
+- Property/management identity and address
+- Resident association
+- Grievance committee
+- Regional manager
+- Written-grievance procedure
+- Management-response period
+- HUD/local-office contact option
+- Management signature and date
+- Rules covering absences, household members, alcohol, appliances, community rooms, conduct, guests, fire safety, housekeeping, keys, laundry, maintenance, parking, pets, privacy, rent, security, smoking, trash, transfers, and VAWA protections
+- Tenant signature, printed name, and date
+- Co-tenant signature, printed name, and date
+- Witness signatures, printed names, and dates
+
+### HUD VAWA Notice of Occupancy Rights
+
+Sources: embedded in `document-6.pdf` and `document-8.pdf`
+
+- Form title
+- HUD form number
+- OMB approval number
+- Expiration date
+- Covered housing program
+- Protected-person definitions
+- Emergency-transfer conditions
+- Lease-bifurcation information
+- Acceptable documentation
+- Confidentiality requirements
+- Reasonable-accommodation information
+- Complaint/help contacts
+- Page number
+
+### HUD VAWA Certification
+
+Sources: embedded in `document-6.pdf` and `document-8.pdf`
+
+- Victim name
+- Applicant/tenant name, if different
+- Other household members
+- Perpetrator name
+- Safe-contact method
+- Telephone number
+- Safe-to-leave-voicemail choice
+- Email address
+- Safe-to-email choice
+- Mailing address
+- Safe-to-mail choice
+- Other safe-contact method
+- Incident/certification information
+- Signature
+- Date
+
+## Embedded notices, correspondence, and evidence
+
+### Notice to Comply or Vacate
+
+Source: Exhibit A in `document-6.pdf`
+
+- Law-firm/issuer letterhead
+- Notice date
+- Delivery methods
+- Recipient name and address
+- Subject/title
+- Landlord/property name
+- Property address
+- Alleged violation
+- Lease/rule provision implicated
+- Prior warnings
+- Accommodation requested/provided
+- Required corrective action
+- Compliance/vacate deadline
+- Consequences of noncompliance
+- Legal-resource contacts
+- Issuer/attorney signature and contact information
+- Attachments
+
+### Attorney Warning or Demand Letter
+
+Source: Exhibits C and D in `document-5.pdf`
+
+- Letterhead
+- Sender attorney(s)
+- Firm and contact information
+- Letter date
+- Delivery method
+- Recipient name and address
+- Subject/reference line
+- Property address
+- Prior communications/notices
+- Alleged incident dates and times
+- Accommodation facts
+- Required action/demand
+- Consequences of noncompliance
+- Proposed meeting dates/times
+- Interpreter request or need
+- Scheduling contact
+- Attorney signature/name/title
+
+### Email Correspondence
+
+Source: Exhibit B in `document-5.pdf`
+
+- From
+- Sent date/time
+- To
+- Cc
+- Subject
+- Message body
+- Sender signature/contact information
+- Referenced expectations or accommodation terms
+
+### Photographic Evidence
+
+Sources: Exhibit E in `document-5.pdf`; Exhibits B/D in `document-6.pdf`; exhibits in `document-8.pdf`
+
+- Exhibit designation
+- Photograph/image
+- Subject shown
+- Location
+- Date/time, when present
+- Caption or description, when present
+- Visible label, address, barcode, or other identifying text
+
+## Postal and service records
+
+### Certified-Mail Receipt / Return Receipt
+
+Sources: Exhibit C in `document-6.pdf`; exhibits in `document-8.pdf`
+
+- USPS article/tracking number
+- Certified-mail fee
+- Return-receipt type
+- Restricted-delivery option
+- Postage
+- Total postage and fees
+- Postmark/date
+- Sender/reference information
+- Recipient name
+- Recipient address
+- Barcode
+- Return-receipt-requested indicator
+- Delivery signature
+- Agent/addressee choice
+- Printed recipient name
+- Delivery date
+- Different-delivery-address indicator
+- Service type
+
+### Mailing Label or Slip
+
+Sources: exhibits in `document-6.pdf` and `document-8.pdf`
+
+- Sender
+- Recipient
+- Mailing address
+- Mailing date
+- Postal service/class
+- Tracking/article number
+- Package information
+- Reference number
+- Barcode
+
+### Declaration of Service / Posting
+
+Sources: Exhibit D in `document-6.pdf`; exhibits in `document-8.pdf`
+
+- Case/matter name
+- Property address
+- State/county/notary venue
+- Process-server name
+- Process-server qualifications
+- Service/posting date
+- Service/posting time
+- Service address
+- Documents served
+- Service method
+- Personal-service indicator
+- Posting indicator
+- Posting location
+- Attempted-service dates/times
+- Recipient or person contacted
+- Result of each attempt
+- Declaration under penalty of perjury
+- Signature/date
+- Process-server company
+- Company address and telephone
+- Process-server identification number
+- Photograph/proof of posting
+
+## Department of Defense SCRA Status Report
+
+Source: Exhibit E in `document-6.pdf`; also embedded in `document-8.pdf`
+
+- Report title
+- SSN or identifying-number field
+- Birth date
+- Last name
+- First name
+- Middle name
+- Status-as-of date
+- Certificate ID
+- Active-duty start date
+- Active-duty end date
+- Active-duty status
+- Service component
+- Active duty within prior 367 days
+- Future call-up notification status
+- Order-notification start date
+- Order-notification end date
+- Search-result explanation
+- SCRA coverage/warning text
